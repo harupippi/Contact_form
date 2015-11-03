@@ -34,10 +34,8 @@
 	  	<?php 
 	$sexes = array('男性','女性','その他');
 	foreach($sexes as $sex){
-		print('<label>');
 		print('<input type="radio" name="sex" value="'.$sex.'"');
 		print(' />');
-		print($sex.'</label>');
 	}
 	?>
 	  	<h3>お名前</h3><br />
