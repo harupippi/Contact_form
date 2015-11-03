@@ -23,7 +23,7 @@
   	<h2 class="single-title">お問い合わせフォーム</h2>
   	<br />
   	<h3>お客様情報</h3>
-
+ああああああああああああああ
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
