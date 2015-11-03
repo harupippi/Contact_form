@@ -28,7 +28,7 @@
   		<h2>お客様情報</h2>
       <div class="form-group">
   	  	<h3>お名前(漢字)</h3>
-  	  	<input type="text" id="name" name="name" placeholder="お名前を入力してください"/>
+  	  	<input type="text" cols="30"　id="name" name="name" placeholder="お名前を入力してください"/>
       </div>
       <div class="form-group">
   	  	<h3>フリガナ(カタカナ)</h3>
