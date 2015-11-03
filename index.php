@@ -28,11 +28,11 @@
   		<h2>お客様情報</h2>
       <div class="form-group">
   	  	<h3>お名前(漢字)</h3>
-  	  	<input type="text" class="form-control" 　id="name" name="name" placeholder="お名前を入力してください"/>
+  	  	<input type="text" class="form-control" 　id="name" name="name" placeholder="お名前を入力してください。"/>
       </div>
       <div class="form-group">
   	  	<h3>フリガナ(カタカナ)</h3>
-  	  	<input type="text" class="form-control" id="kana" name="kana"/>
+  	  	<input type="text" class="form-control" id="kana" name="kana"　placeholder="フリガナを入力してください。"/>
   	  </div>
       	<h3>性別</h3><br />
   	  	<?php 
@@ -50,12 +50,12 @@
       <h2>お問い合わせの内容</h2>
   	  <div class="form-group">
       	<h3>件名</h3><br />
-  	  	<input type="text" class="form-control" id="title" name="title"/>
+  	  	<input type="text" class="form-control" id="title" name="title"　placeholder="件名を入力してください。"/>
   	  </div>
       <div class="form-group">
       	<h3>ご記入欄</h3><br />
-  	  	<textarea class="form_control" rows="5" id="memo"
-  		name="memo"></textarea>
+  	  	<textarea class="form-control" rows="5" id="memo"
+  		name="memo"　placeholder="ご質問の内容をご記入ください。"></textarea>
       </div><br />
 
 		<input type="submit" value="送信" class="btn btn-default"/>
