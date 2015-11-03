@@ -32,12 +32,15 @@
 	  	<input type="text" id="kana" name="kana"/>
 	  	<h3>性別</h3><br />
 	  	<?php 
-	$sexes = array('男性','女性','その他');
-	foreach($sexes as $sex){
-		print('<input type="radio" name="sex" value="'.$sex.'"');
-		print(' />');
-	}
-	?>
+  $sexes = array('男性','女性','その他');
+  foreach($sexes as $sex){
+    print('<label>');
+    print('<input type="radio" name="sex" value="'.$sex.'"');
+    if($sex === $defs['sex']){print('checked');}
+    print(' />');
+    print($sex.'</label>');
+  }
+  ?>
 	  	<h3>メールアドレス</h3><br />
 	  	<input type="text" id="email" name="email"/>
 	  	<h2>お問い合わせの内容</h2>
