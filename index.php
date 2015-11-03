@@ -18,7 +18,8 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+  	<h1>お問い合わせフォーム</h1>
+  	<hr>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
