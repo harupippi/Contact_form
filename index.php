@@ -26,8 +26,10 @@
   	必要事項をご記入の上、<strong>送信する</strong>を押してください。
   	<h2>お客様情報</h2>
   	<form method="POST" action="send.php">
-  		<h3>お名前</h3><br />
-  		<input type="text" id="name" name="name" value="<?php print($defs['name']); ?>" />
+	  	<h3>お名前(漢字)</h3><br />
+	  	<input type="text" id="name" name="name"/>
+	  	<h3>フリガナ(カタカナ)</h3><br />
+	  	<input type="text" id="kana" name="kana"/>
 
   	</form>
   	
