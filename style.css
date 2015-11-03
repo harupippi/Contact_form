@@ -1,3 +1,11 @@
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-left: 5px solid #008000;
+}
+
 h2 {
   font-size: 18px;
   font-weight: normal;
