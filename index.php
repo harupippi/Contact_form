@@ -18,7 +18,7 @@
     <![endif]-->
   </head>
   <body>
-  	<h1>お問い合わせフォーム</h1>
+  	<h1 class="single-title">お問い合わせフォーム</h1>
   	<hr>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
