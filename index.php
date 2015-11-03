@@ -26,29 +26,41 @@
   	必要事項をご記入の上、<strong>送信する</strong>を押してください。
   	<form method="POST" action="send.php">
   		<h2>お客様情報</h2>
-	  	<h3>お名前(漢字)</h3>
-	  	<input type="text" id="name" name="name"/>
-	  	<h3>フリガナ(カタカナ)</h3>
-	  	<input type="text" id="kana" name="kana"/>
-	  	<h3>性別</h3><br />
-	  	<?php 
-  $sexes = array('男性','女性','その他');
-  foreach($sexes as $sex){
-    print('<input type="radio" name="sex" value="'.$sex.'"');
-    print(' />');
-    print($sex);
-  }
-  ?>
-	  	<h3>メールアドレス</h3><br />
-	  	<input type="text" id="email" name="email"/>
-	  	<h2>お問い合わせの内容</h2>
-	  	<h3>件名</h3><br />
-	  	<input type="text" id="title" name="title"/>
-	  	<h3>ご記入欄</h3><br />
-	  	<textarea rows="5" cols="30" id="memo"
-		name="memo"></textarea><br />
+      <div class="form-group">
+  	  	<h3>お名前(漢字)</h3>
+  	  	<input type="text" id="name" name="name"/>
+      </div>
+      <div class="form-group">
+  	  	<h3>フリガナ(カタカナ)</h3>
+  	  	<input type="text" id="kana" name="kana"/>
+  	  </div>
+      <div class="radio">
+      	<h3>性別</h3><br />
+  	  	<?php 
+    $sexes = array('男性','女性','その他');
+    foreach($sexes as $sex){
+      print('<input type="radio" name="sex" value="'.$sex.'"');
+      print(' />');
+      print($sex);
+    }
+    ?>
+      </div>
+      <div class="form-group">
+  	  	<h3>メールアドレス</h3><br />
+  	  	<input type="text" id="email" name="email" placeholder="メール・アドレスを入力して下さい。"/>
+  	  </div>
+      <h2>お問い合わせの内容</h2>
+  	  <div class="form-group">
+      	<h3>件名</h3><br />
+  	  	<input type="text" id="title" name="title"/>
+  	  </div>
+      <div class="form-group">
+      	<h3>ご記入欄</h3><br />
+  	  	<textarea class="form_control" rows="5" cols="30" id="memo"
+  		name="memo"></textarea>
+      </div><br />
 
-		<input type="submit" value="送信" />
+		<input type="submit" value="送信" class="btn btn-default"/>
 	</form>
 
 
