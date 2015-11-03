@@ -24,8 +24,8 @@
   	<br />
   	お客様からのご質問をお問い合わせフォームにて受け付けております。<br />
   	必要事項をご記入の上、<strong>送信する</strong>を押してください。
-  	<h2>お客様情報</h2>
   	<form method="POST" action="send.php">
+  		<h2>お客様情報</h2>
 	  	<h3>お名前(漢字)</h3>
 	  	<input type="text" id="name" name="name"/>
 	  	<h3>フリガナ(カタカナ)</h3>
@@ -40,10 +40,15 @@
 	?>
 	  	<h3>メールアドレス</h3><br />
 	  	<input type="text" id="email" name="email"/>
+	  	<h2>お問い合わせの内容</h2>
+	  	<h3>件名</h3><br />
+	  	<input type="text" id="title" name="title"/>
+	  	<h3>ご記入欄</h3><br />
+	  	<textarea rows="5" cols="30" id="memo"
+		name="memo"></textarea>
 
-
-
-  	</form>
+		<input type="submit" value="送信" />
+	</form>
   	<?php 
   		print('aaaaa');
 
