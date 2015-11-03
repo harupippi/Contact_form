@@ -22,7 +22,17 @@
   <body>
   	<h1 class="single-title">お問い合わせフォーム</h1>
   	<br />
+  	お客様からのご質問をお問い合わせフォームにて受け付けております。<br />
+  	必要事項をご記入の上、<strong>送信する</strong>を押してください。
   	<h2>お客様情報</h2>
+  	<form method="POST" action="send.php">
+  		<h3>お名前</h3><br />
+  		<input type="text" id="name" name="name" value="<?php print($defs['name']); ?>" />
+
+  	</form>
+  	
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
