@@ -54,7 +54,7 @@
   	  </div>
       <div class="form-group">
       	<h3>ご記入欄</h3><br />
-  	  	<textarea class="form_control" rows="5" cols="30" id="memo"
+  	  	<textarea class="form_control" rows="5" id="memo"
   		name="memo"></textarea>
       </div><br />
 
