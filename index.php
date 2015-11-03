@@ -30,6 +30,21 @@
 	  	<input type="text" id="name" name="name"/>
 	  	<h3>フリガナ(カタカナ)</h3>
 	  	<input type="text" id="kana" name="kana"/>
+	  	<h3>性別</h3><br />
+	  	<?php 
+	$sexes = array('男性','女性','その他');
+	foreach($sexes as $sex){
+		print('<label>');
+		print('<input type="radio" name="sex" value="'.$sex.'"');
+		if($sex === $defs['sex']){print('checked');}
+		print(' />');
+		print($sex.'</label>');
+	}
+	?>
+	  	<h3>お名前</h3><br />
+	  	<input type="text" id="name" name="name"/>
+
+
 
   	</form>
   	
