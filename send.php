@@ -37,7 +37,7 @@
         <dt>件名:</dt>
         <dd><?php print(e($_POST['title'])); ?></dd>
         <dt>お問い合わせの内容:</dt>
-        <dd><?php print(n12br(e($_POST['memo']))); ?></dd>
+        <dd><?php print(nl2br(e($_POST['memo']))); ?></dd>
     </dl>
 
 
