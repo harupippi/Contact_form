@@ -28,13 +28,12 @@
   		<h2>お客様情報</h2>
       <div class="form-group">
   	  	<h3>お名前(漢字)</h3>
-  	  	<input type="text" id="name" name="name"/>
+  	  	<input type="text" id="name" name="name" placeholder="お名前を入力してください"/>
       </div>
       <div class="form-group">
   	  	<h3>フリガナ(カタカナ)</h3>
   	  	<input type="text" id="kana" name="kana"/>
   	  </div>
-      <div class="radio">
       	<h3>性別</h3><br />
   	  	<?php 
     $sexes = array('男性','女性','その他');
@@ -44,10 +43,9 @@
       print($sex);
     }
     ?>
-      </div>
       <div class="form-group">
   	  	<h3>メールアドレス</h3><br />
-  	  	<input type="text" id="email" name="email" placeholder="メール・アドレスを入力して下さい。"/>
+  	  	<input type="text" id="email" name="email" placeholder="メールアドレスを入力して下さい。"/>
   	  </div>
       <h2>お問い合わせの内容</h2>
   	  <div class="form-group">
