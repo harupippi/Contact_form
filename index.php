@@ -36,7 +36,7 @@
   foreach($sexes as $sex){
     print('<input type="radio" name="sex" value="'.$sex.'"');
     print(' />');
-    print($sex.);
+    print($sex);
   }
   ?>
 	  	<h3>メールアドレス</h3><br />
