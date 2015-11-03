@@ -29,7 +29,7 @@
         <dt>お名前(漢字)：</dt>
         <dd><?php print(e($_POST['name'])); ?></dd>
         <dt>フリガナ(カタカナ)：</dt>
-        <dd><?php print(e($_POST['name'])); ?></dd>
+        <dd><?php print(e($_POST['kana'])); ?></dd>
         <dt>性別：</dt>
         <dd><?php print(e($_POST['sex'])); ?></dd>
         <dt>メールアドレス：</dt>
