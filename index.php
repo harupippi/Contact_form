@@ -38,8 +38,8 @@
 		print(' />');
 	}
 	?>
-	  	<h3>お名前</h3><br />
-	  	<input type="text" id="name" name="name"/>
+	  	<h3>メールアドレス</h3><br />
+	  	<input type="text" id="email" name="email"/>
 
 
 
