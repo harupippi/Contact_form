@@ -36,7 +36,6 @@
   foreach($sexes as $sex){
     print('<label>');
     print('<input type="radio" name="sex" value="'.$sex.'"');
-    if($sex === $defs['sex']){print('checked');}
     print(' />');
     print($sex.'</label>');
   }
@@ -52,10 +51,6 @@
 
 		<input type="submit" value="送信" />
 	</form>
-  	<?php 
-  		print('aaaaa');
-
-  	?>
 
 
 
