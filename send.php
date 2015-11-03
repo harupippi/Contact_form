@@ -1,3 +1,6 @@
+<?php
+  require_once'Encode.php'; 
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -20,36 +23,22 @@
     <![endif]-->
   </head>
   <body>
-  	<h1>お問い合わせフォーム</h1>
-  	<br />
-  	お客様からのご質問をお問い合わせフォームにて受け付けております。<br />
-  	必要事項をご記入の上、<strong>送信する</strong>を押してください。
-  	<form method="POST" action="send.php">
-  		<h2>お客様情報</h2>
-	  	<h3>お名前(漢字)</h3>
-	  	<input type="text" id="name" name="name"/>
-	  	<h3>フリガナ(カタカナ)</h3>
-	  	<input type="text" id="kana" name="kana"/>
-	  	<h3>性別</h3><br />
-	  	<?php 
-  $sexes = array('男性','女性','その他');
-  foreach($sexes as $sex){
-    print('<input type="radio" name="sex" value="'.$sex.'"');
-    print(' />');
-    print($sex);
-  }
-  ?>
-	  	<h3>メールアドレス</h3><br />
-	  	<input type="text" id="email" name="email"/>
-	  	<h2>お問い合わせの内容</h2>
-	  	<h3>件名</h3><br />
-	  	<input type="text" id="title" name="title"/>
-	  	<h3>ご記入欄</h3><br />
-	  	<textarea rows="5" cols="30" id="memo"
-		name="memo"></textarea><br />
-
-		<input type="submit" value="送信" />
-	</form>
+    <h1>ご回答ありがとうございました。<small>以下の内容で送信いたしました。</small></h1>
+    <br />
+    <dl>
+        <dt>お名前(漢字)：</dt>
+        <dd><?php print(e($_POST['name'])); ?></dd>
+        <dt>フリガナ(カタカナ)：</dt>
+        <dd><?php print(e($_POST['name'])); ?></dd>
+        <dt>性別：</dt>
+        <dd><?php print(e($_POST['sex'])); ?></dd>
+        <dt>メールアドレス：</dt>
+        <dd><?php print(e($_POST['email'])); ?></dd>
+        <dt>件名:</dt>
+        <dd><?php print(n12br(e($_POST['memo']))); ?></dd>
+        <dt>お問い合わせの内容:</dt>
+        <dd><?php print(n12br(e($_POST['memo']))); ?></dd>
+    </dl>
 
 
 
