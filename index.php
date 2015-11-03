@@ -45,7 +45,7 @@
 	  	<input type="text" id="title" name="title"/>
 	  	<h3>ご記入欄</h3><br />
 	  	<textarea rows="5" cols="30" id="memo"
-		name="memo"></textarea>
+		name="memo"></textarea><br />
 
 		<input type="submit" value="送信" />
 	</form>
