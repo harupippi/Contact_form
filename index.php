@@ -41,7 +41,8 @@
       </div>
       <div class="form-group">
   	  	<label for="kana">フリガナ(カタカナ)</label>
-  	  	<input type="text" class="form-control" id="kana" name="kana" placeholdee="フリガナを入力してください。"/>
+  	  	<input type="text" class="form-control" 　id="kana" name="kana" placeholder="フリガナを入力してください。"/>
+      </div>
   	  </div>
       	<label for="sex">性別</label><br />
   	  	<?php 
@@ -59,7 +60,7 @@
       <h2>お問い合わせの内容</h2>
   	  <div class="form-group">
       	<label for="title">件名</label><br />
-  	  	<input type="text" class="form-control" id="title" name="title"　placeholder="件名を入力してください。"/>
+  	  	<input type="text" class="form-control" id="title" name="title" placeholder="件名を入力してください。"/>
   	  </div>
       <div class="form-group">
       	<label for="memo">ご記入欄</label><br />

@@ -1,43 +1,7 @@
 <?php
   require_once'Encode.php'; 
-
-  /*$errors = array();
-  foreach ($_POST as $key => $value) {
-      if (is_array($value)) {
-          $value = implode('', $value);
-      }
-      if (!mb_check_encoding($value)) {
-          $errors[] = '文字コードに誤りがあります。';
-        break;
-      }
-  }*/
-  if (trim($_POST['name']) === '') {
-      $errors[] = 'お名前は必ず入力してください。';
-  }
-  if (mb_strlen($_POST['name']) > 50) {
-      $errors[] = 'お名前は50文字以内で入力してください。';
-  }
-  if (trim($_POST['kana']) === '') {
-      $errors[] = 'フリガナは必ず入力してください。';
-  }
-  if (mb_strlen($_POST['kana']) > 50) {
-      $errors[] = 'フリガナは50文字以内で入力してください。';
-  }
-  if (!preg_match('/^\w+([-+.\']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/iD', $_POST['email'])) {
-      $errors[] = '不正なメールアドレスです。';
-   }
-    if (trim($_POST['title']) === '') {
-      $errors[] = '件名は必ず入力してください。';
-  }
-  if (mb_strlen($_POST['title']) > 50) {
-      $errors[] = '件名は50文字以内で入力してください。';
-  }
-  if (count($errors) > 0) {
-      die(implode('<br />', $errors).
-        '<br /><a href="index.php" class="btn btn-success">戻る</a>');
-  }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -60,6 +24,46 @@
     <![endif]-->
   </head>
   <body>
+  <?php
+      $errors = array();
+      /*foreach ($_POST as $key => $value) {
+          if (is_array($value)) {
+              $value = implode('', $value);
+          }
+          if (!mb_check_encoding($value)) {
+              $errors[] = '文字コードに誤りがあります。';
+            break;
+          }
+      }*/
+        if (trim($_POST['name']) === '') {
+          $errors[] = 'お名前は必ず入力してください。';
+        }
+        if (mb_strlen($_POST['name']) > 50) {
+          $errors[] = 'お名前は50文字以内で入力してください。';
+        }
+        if (trim($_POST['kana']) === '') {
+          $errors[] = 'フリガナは必ず入力してください。';
+        }
+        if (mb_strlen($_POST['kana']) > 50) {
+          $errors[] = 'フリガナは50文字以内で入力してください。';
+        }
+        if (!preg_match('/^\w+([-+.\']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/iD', $_POST['email'])) {
+          $errors[] = '不正なメールアドレスです。';
+        }
+        if (trim($_POST['title']) === '') {
+          $errors[] = '件名は必ず入力してください。';
+        }
+        if (mb_strlen($_POST['title']) > 50) {
+          $errors[] = '件名は50文字以内で入力してください。';
+        }
+        if (count($errors) > 0) {
+            print('<h1>エラーメッセージ</h1>');
+            print(implode('<br />', $errors).
+            '<br /><a href="index.php" class="btn btn-success">戻る</a>');
+          die();
+        }
+
+    ?>
     <h1>ご回答ありがとうございました。<small>以下の内容で送信いたしました。</small></h1>
     <br />
     <dl>
