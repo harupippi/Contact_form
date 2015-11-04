@@ -25,6 +25,9 @@
   </head>
   <body>
   <?php
+     if (!isset($_POST['token'])) {
+            die('不正なアクセスが行われました。');
+        }
       $errors = array();
       /*foreach ($_POST as $key => $value) {
           if (is_array($value)) {

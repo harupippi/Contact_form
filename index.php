@@ -67,7 +67,11 @@
   	  	<textarea class="form-control" rows="5" id="memo"
   		name="memo"　placeholder="ご質問の内容をご記入ください。"></textarea>
       </div><br />
+      <?php
+      	$token = md5(uniqid(mt_rand(),TRUE)); 
+      ?>
 
+      	<input type="hidden" name="token" value="<?php print($token); ?>"/>
 		<input type="submit" value="送信する" class="btn btn-success"/><br /><br />
 	</form>
 
