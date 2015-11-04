@@ -58,7 +58,7 @@
   		name="memo"　placeholder="ご質問の内容をご記入ください。"></textarea>
       </div><br />
 
-		<input type="submit" value="送信" class="btn btn-default"/>
+		<input type="submit" value="送信する" class="btn btn-default"/>
 	</form>
 
 
