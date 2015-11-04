@@ -34,7 +34,7 @@
   }
   if (count($errors) > 0) {
       die(implode('<br />', $errors).
-        '<br /><a href="index.php"><div class="btn btn-success">戻る</div></a>');
+        '<br /><a href="index.php" class="btn btn-success">戻る</a>');
   }
 
 ?>
@@ -48,8 +48,8 @@
     <title>お問い合わせフォーム</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
