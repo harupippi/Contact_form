@@ -37,11 +37,11 @@
   		<h2>お客様情報</h2>
       <div class="form-group">
   	  	<label for="name">お名前(漢字)</label>
-  	  	<input type="text" class="form-control" 　id="name" name="name" placeholder="お名前を入力してください。"/>
+  	  	<input type="text" class="form-control" 　id="name" name="name" placeholder="お名前を入力してください。" required maxlength="30"/>
       </div>
       <div class="form-group">
   	  	<label for="kana">フリガナ(カタカナ)</label>
-  	  	<input type="text" class="form-control" 　id="kana" name="kana" placeholder="フリガナを入力してください。"/>
+  	  	<input type="text" class="form-control" 　id="kana" name="kana" placeholder="フリガナを入力してください。" required maxlength="30"/>
       </div>
   	  </div>
       	<label for="sex">性別</label><br />
@@ -49,23 +49,23 @@
     $sexes = array('男性','女性','その他');
     foreach($sexes as $sex){
       print('<input type="radio" name="sex" value="'.$sex.'"');
-      print(' />');
+      print(' required/>');
       print($sex);
     }
     ?>
       <div class="form-group">
   	  	<label for="email">メールアドレス</label><br />
-  	  	<input type="text" class="form-control" id="email" name="email" placeholder="メールアドレスを入力して下さい。"/>
+  	  	<input type="email" class="form-control" id="email" name="email" placeholder="メールアドレスを入力して下さい。" required/>
   	  </div>
       <h2>お問い合わせの内容</h2>
   	  <div class="form-group">
       	<label for="title">件名</label><br />
-  	  	<input type="text" class="form-control" id="title" name="title" placeholder="件名を入力してください。"/>
+  	  	<input type="text" class="form-control" id="title" name="title" placeholder="件名を入力してください。" required maxlength="50"/>
   	  </div>
       <div class="form-group">
       	<label for="memo">ご記入欄</label><br />
   	  	<textarea class="form-control" rows="5" id="memo"
-  		name="memo"　placeholder="ご質問の内容をご記入ください。"></textarea>
+  		name="memo"　placeholder="ご質問の内容をご記入ください。" required></textarea>
       </div><br />
       <?php
       	$token = md5(uniqid(mt_rand(),TRUE)); 
