@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylecss.php" type="text/css" rel="stylesheet">
     <script src="js/jquery.ah-placeholder.js" type="text/javascript" charset="utf-8"></script><!-- 非対応ブラウザのplaceholderの導入-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
