@@ -33,7 +33,7 @@
   	<br />
   	お客様からのご質問をお問い合わせフォームにて受け付けております。<br />
   	必要事項をご記入の上、<strong>送信する</strong>を押してください。
-  	<form method="POST" action="send.php">
+  	<form method="POST" action="send.php"><!-- フォームセッティング -->
   		<h2>お客様情報</h2>
       <div class="form-group">
   	  	<label for="name">お名前(漢字)</label>
@@ -67,10 +67,11 @@
   	  	<textarea class="form-control" rows="5" id="memo"
   		name="memo"　placeholder="ご質問の内容をご記入ください。" required></textarea>
       </div><br />
+
+      <!-- トークン取得-->
       <?php
       	$token = md5(uniqid(mt_rand(),TRUE)); 
       ?>
-
       	<input type="hidden" name="token" value="<?php print($token); ?>"/>
 		<input type="submit" value="送信する" class="btn btn-success"/><br /><br />
 	</form>

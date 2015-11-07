@@ -25,19 +25,11 @@
   </head>
   <body>
   <?php
-     if (!isset($_POST['token'])) {
+     if (!isset($_POST['token'])) {  /*不正アクセス検出*/
             die('不正なアクセスが行われました。');
         }
-      $errors = array();
-      /*foreach ($_POST as $key => $value) {
-          if (is_array($value)) {
-              $value = implode('', $value);
-          }
-          if (!mb_check_encoding($value)) {
-              $errors[] = '文字コードに誤りがあります。';
-            break;
-          }
-      }*/
+      $errors = array(); /*エラー検出、HTML5非対応用*/
+     
         if (trim($_POST['name']) === '') {
           $errors[] = 'お名前は必ず入力してください。';
         }
@@ -68,7 +60,7 @@
         
 
     ?>
-    <h1>ご回答ありがとうございました。<small>以下の内容で送信いたしました。</small></h1>
+    <h1>ご回答ありがとうございました。<small>以下の内容で送信いたしました。</small></h1><!-- 送信内容表示-->
     <br />
     <dl>
         <dt>お名前(漢字)：</dt>
